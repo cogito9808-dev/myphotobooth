@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>인생네컷 AI 커스텀 포토부스</title>
+    <meta property="og:title" content="나만의 포토부스 만들기">
+    <meta property="og:description" content="템플릿을 직접 올리고 나만의 네컷 사진을 촬영하세요!">
+    
+    <meta name="theme-color" content="#4f46e5">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 모바일에서 텍스트 선택 및 스크롤 바운스 방지 */
+        body { 
+            font-family: 'Noto Sans KR', sans-serif; 
+            overscroll-behavior: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .font-jua { font-family: 'Jua', sans-serif; }
+        .step-hidden { display: none !important; }
+        #preview-container { 
+            position: relative; 
+            overflow: hidden; 
+            background: #e5e7eb;
+            aspect-ratio: 3 / 4; /* 기본 세로형 비율 */
+        }
+        .draggable { 
+            position: absolute; 
+            cursor: move; 
+            touch-action: none; 
+            z-index: 10;
+        }
+        /* 로딩 애니메이션 커스텀 */
+        .loader {
+            border-top-color: #4f46e5;
+            animation: spinner 1.5s linear infinite;
+        }
+        @keyframes spinner { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+    </style>
+</head>
+<body class="bg-indigo-50 text-slate-800">
+
+    </body>
+</html>
